@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+ html{
+    font-family: 'Space Grotesk'; /*Tipo de letra*/
+ }
+
+ *{
+    margin: 0; /*dentro del borde*/
+    padding: 0; /*fuera del borde*/
+    box-sizing: border-box; /*Controlar el tamaño total de un elemento*/
+ }
+ body{
+    background-color: lightgray;
+ }
+ .text{
+    margin-right: 20px;
+ }
+ /*Menu de Navegacion*/
+
+ .menuNavegacion{
+    background-color: rgb(240, 178, 64);
+    padding: 15px 0;
+    
+ }
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.navegacion .fa-bars{
+    display: none;
+}
+.menu{
+    display: flex;
+    gap: 2rem;
+    margin-left: 20px;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    transition: all ease-in-out 0.3s;
+text-decoration: none;
+color: black;
+}
+.inicio{
+    background-color: whitesmoke;
+    padding: 9px;
+    border-radius: 22px 14px;
+}
+.menu a:hover{
+    transition: all ease-in-out 0.3s;
+    background-color: whitesmoke;
+    padding: 9px;
+    border-radius: 22px 14px; 
+}
+.conteiner{
+    padding: 40px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.left{
+    background-color: rgb(240, 178, 64) ;
+    padding: 10px 10px;
+    border-radius: 15px;
+    padding-right: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color:  rgb(240, 178, 64);
+    border-radius: 0 15px 0 15px;
+}
+.categoria{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: darkblue;
+}
+
+.Producto{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    padding: 15px;
+    position: relative;
+  }
+  .Producto:hover>:not(:hover){
+    opacity:.4;
+    transform: scale(0.9);
+  }
+  .Producto>div{
+    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .9s ;
+  }
+  .Producto>div:hover{
+    flex: 5;
+  }
+  .titulo2{
+    background-color: rgb(240, 178, 64);
+    margin-top: 30px;
+    height: 5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  
+  .filtros-cards{
+    float: left;
+     gap: 2rem;
+     background-color: lightgray;
+ 
+ }
+ .card{
+    margin-left: 40px;
+    background-color: honeydew;
+    padding: 3px;
+    border-radius: 1rem;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+ }
+ .card img{
+    width: 20vw;
+    border-radius: 20px;
+    height: 18vw;
+    object-fit: cover;
+    
+ }
+  
+ .card-titulo{
+     font-size: 20px;
+     font-weight: 500;
+     color: orangered;
+ }
+ 
+ .card-texto{
+     font-size: 18px;
+     text-align: center;
+     color: brown;
+ }
